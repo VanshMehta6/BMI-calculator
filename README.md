@@ -37,20 +37,21 @@ BMI/
   java -version
   javac -version
 
-  Compilation
+Compilation
 Open a terminal in the project root directory (the folder containing the com/ folder) and run:
 javac com/bmi/model/*.java com/bmi/service/*.java com/bmi/*.java
 
 Running the Application
-java com.bmi.Main
+
+    java com.bmi.Main
 
 🖥️ How to Use
 1. Fill in the details:
 
- Name (text)
- Age (1–120)
- Height in meters (0.5 – 2.5)
- Weight in kilograms (10 – 300)
+ - Name (text)
+ - Age (1–120)
+ - Height in meters (0.5 – 2.5)
+ - Weight in kilograms (10 – 300)
 
 2. Click "Calculate BMI" – the result and health advice appear in the lower-left panel.
 
@@ -66,26 +67,26 @@ BMI Range	    Category
 ≥ 30.0	      Obese
 
 ⚠️ Error Handling
-The application validates all inputs:
-Empty fields are rejected.
-Out-of-range values are prevented.
-Non‑numeric inputs are caught and reported.
+- The application validates all inputs:
+- Empty fields are rejected.
+- Out-of-range values are prevented.
+- Non‑numeric inputs are caught and reported.
 
 🔧 Troubleshooting
 Issue:	Solution
-javac: file not found	Run the command from the root directory (where com/ exists).
-GUI shows ? or weird symbols	Use chcp 65001 in Windows terminal before running, or use the ASCII version of Main.java.
-Compilation errors (encoding)	Add -encoding UTF-8 to the javac command.
-BMI always "Obese"	Check your input – ensure height is in meters (e.g., 1.75, not 175).
+- javac: file not found	Run the command from the root directory (where com/ exists).
+- GUI shows ? or weird symbols	Use chcp 65001 in Windows terminal before running, or use the ASCII version of Main.java.
+- Compilation errors (encoding)	Add -encoding UTF-8 to the javac command.
+- BMI always "Obese"	Check your input – ensure height is in meters (e.g., 1.75, not 175).
 
 📦 Future Enhancements (Ideas)
-Save history to a file (CSV or JSON)
-Add weight‑loss goal tracker
-Export history report
-Chart BMI trends over time
+- Save history to a file (CSV or JSON)
+- Add weight‑loss goal tracker
+- Export history report
+- Chart BMI trends over time
 
 👨‍💻 Author
-Developed as a Java Swing project demonstrating MVC‑like separation, OOP principles, and UI design.
+- Developed as a Java Swing project demonstrating MVC‑like separation, OOP principles, and UI design.
 
 📜 License
-This project is open source and available under the MIT License.
+- This project is open source and available under the MIT License.
